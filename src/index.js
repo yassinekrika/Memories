@@ -13,7 +13,7 @@ const store = createStore(reducers, compose(applyMiddleware(thunk)))
 const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);
 root.render(
-  <Provider>
+  <Provider store={store}>
     <App />
   </Provider>
 );

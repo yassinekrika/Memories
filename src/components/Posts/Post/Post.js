@@ -3,13 +3,13 @@ import { useSelector } from 'react-redux'
 import useStyles from './styles'
 
 const Post = () => {
-    const posts = useSelector((state) => {state.posts})
+    const posts = useSelector((state) => {return state.posts})
     const classes = useStyles()
 
     console.log(posts)
 
     return (
-        <h1>Post</h1>
+        <h1 className={classes}>Post</h1>
     )
 }
 
